@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>C.B import</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #000000, #0f0f0f);
+      color: #f5d27a;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      animation: slide 6s infinite alternate;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(-120%); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateX(120%); opacity: 0; }
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f5d27a;
+    }
+
+    p {
+      text-align: center;
+      color: #e6c46f;
+      line-height: 1.6;
+    }
+
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #111;
+      border: 1px solid #f5d27a;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background: #111;
+      border: 1px solid #f5d27a;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .product h3 {
+      margin: 15px 0;
+    }
+
+    .buy {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f5d27a;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #000;
+      color: #f5d27a;
+    }
+
+    a {
+      color: #f5d27a;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="title">C.B IMPORT</div>
+  </header>
+
+  <!-- HISTORIA -->
+  <section>
+    <h2>Nuestra historia</h2>
+    <p>
+      Nacimos con una idea clara: que a la gente dejen de mentirle y que entienda que,
+      acá en <strong>C.B import</strong>, puede comprar perfumes de calidad a precios realmente accesibles.
+    </p>
+  </section>
+
+  <!-- POR QUÉ COMPRAR -->
+  <section>
+    <h2>¿Por qué comprar en C.B import?</h2>
+    <div class="reasons">
+      <div class="box">Los mejores precios de Argentina</div>
+      <div class="box">Alta duración</div>
+      <div class="box">Atención al cliente de sobra</div>
+      <div class="box">Lo mejor está acá</div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section>
+    <h2>Perfumes</h2>
+    <div class="products">
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Perfume+1">
+        <h3>Perfume Árabe</h3>
+        <a class="buy" href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20el%20Perfume%20Árabe">Comprar</a>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Perfume+2">
+        <h3>Perfume Intenso</h3>
+        <a class="buy" href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20el%20Perfume%20Intenso">Comprar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Preguntas frecuentes</h2>
+    <p><strong>¿Cuánto duran?</strong><br>
+      En la piel duran entre 6 y 10 horas. En la ropa pueden durar varios días.
+    </p><br>
+
+    <p><strong>¿Cómo se compra?</strong><br>
+      Nos contactás por WhatsApp indicándonos qué perfume te interesa y te guiamos en todo el proceso.
+    </p><br>
+
+    <p><strong>¿Hacen envíos?</strong><br>
+      Sí, realizamos envíos a todo el país.
+    </p><br>
+
+    <p><strong>¿Por dónde los puedo contactar?</strong><br>
+      Por WhatsApp o por Instagram.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Zona Oeste · Envíos a todo el país · Lunes a domingo</p>
+    <p>
+      Instagram:
+      <a href="https://www.instagram.com/cb_.import?igsh=MTlyNHg2NXlsZjl2NA==" target="_blank">
+        @cb_.import
+      </a>
+    </p>
+  </footer>
+
+</body>
+    </html>
